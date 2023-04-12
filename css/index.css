@@ -26,12 +26,13 @@ section {
 }
 .middle_section {
   background-color: white;
+  width: 100%;
 }
 
 .middle_section1 {
   display: flex;
   justify-content: space-around;
-  padding: 50px;
+  padding: 70px;
 }
 
 .middle_section2 {
@@ -50,12 +51,17 @@ section {
   color: #52a350;
 }
 
+.middle_sub_section1{
+  display: inline-flex;
+}
+
 .middle_section1_sub1 {
-  padding: 50px;
+  padding: 30px;
+  padding-top: 70px;
 }
 
 .middle_section1_sub2 {
-  padding: 50px;
+  padding: 60px;
 }
 
 .middle_section2_sub1 {
@@ -101,6 +107,7 @@ section {
   display: inline-block;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 35vw;
 }
 
 .dropdown-content {
@@ -118,6 +125,7 @@ section {
   padding: 20px;
   display: block;
   background-color: white;
+  width: 100%;
 }
 
 .dropdown:hover .dropdown-content {
@@ -303,6 +311,49 @@ section {
   }
 }
 @media screen and (max-width: 968px) {
+  .middle_section1{
+    display: block;
+    text-align: center;
+  }
+
+  .middle_sub_section1{
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .middle_section2{
+    display: block;
+  }
+
+  .middle_section2_sub1_img{
+    height: 50vh;
+    width: 80vw;
+  }
+
+  .middle_section2_sub2{
+    text-align: center;
+  }
+
+  .dropbtn {
+    width: 70vw;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    color: #52a350;
+  }
+  
+  .dropdown {
+    width: 70vw;
+  }
+
+  .dropdown-content ul {
+    width: 100%;  
+  }
+
+  .icon {
+    margin: 0px auto;
+  }
+
   .product-card {
     width: calc(45% - 20px);
     margin: 10px 20px;
@@ -321,6 +372,13 @@ section {
   }
   .slide {
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .middle_sub_section1{
+    display: block;
+    width: 100%;
   }
 }
 
