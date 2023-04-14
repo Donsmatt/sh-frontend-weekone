@@ -1,88 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/pictures/logosmall.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/pictures/logosmall.svg"
+    />
+    <meta name="msapplication-TileImage" content="/pictures/logosmall.svg" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./css/section-1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;600;700;800;900&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Home | Side Hustle Internship 7.0</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="./css/section-1.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;600;700&family=Manrope:wght@300;400;500&display=swap"
-    rel="stylesheet" />
-  <title>Home | Side Hustle Internship 7.0</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <div class="desktop-nav">
+          <div class="logo">
+            <a href="/">
+              <img src="./pictures/logo.svg" alt="" class="logosvg" />
+            </a>
+          </div>
 
-<body>
-  <header>
-    <nav>
-      <div class="desktop-nav">
-        <div class="logo">
-          <a href="/">
-            <img src="./pictures/logo.svg" alt="" class="logosvg" />
-          </a>
-        </div>
-        <div class="open-menu">
-          <i class="fa fa-bars" id="ham-1"></i>
-        </div>
-        <div class="close-menu">
-          <i class="fa fa-times" id="ham-2"></i>
-        </div>
-
-        <div class="nav-menu">
-          <ul class="underline">
-            <li><a href=""> Courses</a></li>
-            <li><a href=""> Bootcamp</a></li>
-            <li><a href=""> Blog</a></li>
-          </ul>
-        </div>
-        <div>
-          <button type="submit" class="btn">Login</button>
-        </div>
-       <!-- <div class="menu">
-          <ul class="line">
-            <li><a href=""> Courses</a></li>
-            <li><a href=""> Bootcamp</a></li>
-            <li><a href=""> Blog</a></li>
+          <div class="nav-menu nav-links">
+            <ul class="underline">
+              <li><a href=""> Courses</a></li>
+              <li><a href=""> Bootcamp</a></li>
+              <li><a href=""> Blog</a></li>
+              <button class="mobile-login">Login</button>
+            </ul>
+          </div>
+          <div>
             <button type="submit" class="btn">Login</button>
-          </ul>
-        </div>-->
-      </div>
-    </nav>
-    <!--<script>
-      const mainMenu = document.querySelector('.line')
-      const closeMenu = document.querySelector('.close-menu')
-      const openMenu = document.querySelector('.open-menu')
-      const menu = document.querySelector('.menu')
+          </div>
 
-      openMenu.addEventListener('click', show);
-      closeMenu.addEventListener('click', close);
-
-      function show() {
-          // mainMenu.style.display = 'flex';
-          mainMenu.style.top = '0';
-          closeMenu.style.display = 'flex';
-          openMenu.style.display = 'none'
-          menu.style.display = 'flex';
-
-      }
-      function close() {
-          mainMenu.style.display = 'none';
-          openMenu.style.display = 'flex';
-          closeMenu.style.display = 'none';
-          menu.style.display = 'none';
-
-
-      }
-  </script>-->
-  </header>
-  <!--section 1-->
-  <section>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--section 1-->
+    <section>
     <div class="container">
       <div class="container-x">
         <div class="container-1">
@@ -114,7 +90,10 @@
             </div>
           </div>
          <div class="section-b">
+           <div>
             <img src="./pictures/hero.png" alt="" class="pix" />
+           </div>
+            
             <div class="dot">
               <p class="p2">
                 <i class="fa-solid fa-circle" id="circle"></i> Over 300
@@ -144,10 +123,9 @@
     </div>
   </section>
 
-  
-  <section>
+    <section>
     <div class="middle_section">
-      <div class="middle_section1">
+        <div class="middle_section1">
         <div class="middle_section1_sub1">
           <h2 class="h2_text">
             What you stand to <span class="green_text">gain</span>
@@ -159,8 +137,21 @@
           </p>
           <button class="sign_up_btn">Sign up for FREE</button>
         </div>
-        <div>
-          <div class="middle_section1_sub2">
+
+
+
+
+
+
+
+      <div class='middle_section1_sub2'>
+
+
+
+        <div class='desc-wrapper'>
+
+          <div class="desc">
+            <img src='https://lms.terrahq.co/assets/card-bg-lines.7c1574cf.svg'/>
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
                 role="img" class="iconify iconify--ant-design" width="1em" height="1em"
@@ -177,8 +168,8 @@
               certificate of completion at the end of the Internship
             </p>
           </div>
-          <br /><br />
-          <div class="middle_section1_sub2">
+          <div class="desc">
+              <img src='https://lms.terrahq.co/assets/card-bg-lines.7c1574cf.svg'/>
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
                 role="img" class="iconify iconify--codicon" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
@@ -197,8 +188,9 @@
             </p>
           </div>
         </div>
-        <div>
-          <div class="middle_section1_sub2">
+        <div class='desc-wrapper'>
+          <div class="desc">
+              <img src='https://lms.terrahq.co/assets/card-bg-lines.7c1574cf.svg'/>
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
                 role="img" class="iconify iconify--fluent" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
@@ -217,7 +209,12 @@
               skills
             </p>
           </div>
-          <div class="middle_section1_sub2">
+
+
+
+
+          <div class="desc">
+              <img src='https://lms.terrahq.co/assets/card-bg-lines.7c1574cf.svg'/>
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
                 role="img" class="iconify iconify--fluent" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
@@ -234,8 +231,10 @@
             </p>
           </div>
         </div>
+
+        </div>
       </div>
-      <div class="middle_section2">
+      <!-- <div class="middle_section2">
         <div class="middle_section2_sub1">
           <img src="pictures/dashboard-mockup2.0488f4b4.png" alt="Dashboard_ mockup" />
         </div>
@@ -278,11 +277,11 @@
           </div>
           <button class="sign_up_btn">Sign up for FREE</button>
         </div>
-      </div>
+      </div> -->
     </div>
-  </section>
-  <!-- corousel start -->
-  <section class="crousell">
+  </section> 
+    <!-- corousel start -->
+     <section class="crousell">
     <p class="text-xl">We've got our footprint</p>
 
     <div class="slider">
@@ -319,10 +318,10 @@
         </div>
       </div>
     </div>
-  </section>
-  <!-- carousel end -->
-  <!-- internship cards  start -->
- <section class="cards">
+  </section> 
+    <!-- carousel end-->
+    <!-- internship cards  start -->
+    <section class="cards">
     <div class="product-grid">
       <div class="product-card">
         <img src="https://lms.terrahq.co/assets/product-internship.99e0d037.svg" alt="Product 1" />
@@ -365,8 +364,76 @@
       <h2>Ready to join the Internship?</h2>
       <button class="sign_up_btn btn-small">Sign up for FREE</button>
     </div>
-  </section> 
-  <!-- internship cards  end -->
-</body>
+  </section>  
+    <!-- internship cards  end -->
+    <!-- Footer -->
+    <footer>
+      <div class='left'>
+       <div class='form'>
+         <h1 class='big'>Stay in the loop</h1>
+         <p>Be the first to get the latest updates from our fast-growing community of African youths.</p>
+        <form>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic text-[#6F6F90] text-xl bottom-5 absolute left-3" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ic:outline-email" data-v-0fb38893=""><path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5l-8-5h16zm0 12H4V8l8 5l8-5v10z"></path></svg>
+          <input type='test' placeholder='Email address'/>
+          <button class='form-button'>Submit</button>
+          </form>
+        </div>
+      <div class='socials'>
+          <h2>Follow us</h2>
+         <div class='buttons'>
+            <button>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ri mr-2" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ri:linkedin-fill" data-v-0fb38893=""><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z"></path></svg>
+            Linkedin
+          </button>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ri mr-2" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ri:instagram-line" data-v-0fb38893=""><path fill="currentColor" d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0ZM12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.886 2.886 0 0 0-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.91 2.91 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.912 2.912 0 0 0-.703-1.08a2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4Zm0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122c0 2.717-.01 3.056-.06 4.122c-.05 1.065-.218 1.79-.465 2.428a4.884 4.884 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06c-2.717 0-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.89 4.89 0 0 1-1.772-1.153a4.905 4.905 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428c-.048-1.066-.06-1.405-.06-4.122c0-2.717.01-3.056.06-4.122c.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772a4.897 4.897 0 0 1 1.772-1.153c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2Z"></path></svg>
+            instagram
+          </button>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ph mr-2" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" data-icon="ph:twitter-logo-bold" data-v-0fb38893=""><path fill="currentColor" d="M251.09 67.41A12 12 0 0 0 240 60h-28.18a52.73 52.73 0 0 0-43.67-24a50.85 50.85 0 0 0-36.6 14.85A51.87 51.87 0 0 0 116 88v.78c-36.83-11.57-66.38-40.9-66.7-41.23a12 12 0 0 0-20.47 7.38c-6.31 70.17 24.65 107.79 42.06 123.12C56.4 192.83 36 200.68 35.8 200.76a12 12 0 0 0-5.8 17.9C32 221.55 43.44 236 80 236c72.25 0 132.7-55.26 139.6-126.63l28.88-28.88a12 12 0 0 0 2.61-13.08Zm-51.57 28.11a11.93 11.93 0 0 0-3.49 7.72C192.14 164.23 141.18 212 80 212a90.78 90.78 0 0 1-12.49-.79C78 204.55 89.72 195.07 98 182.66a12 12 0 0 0-3.9-17c-.12-.07-12.33-7.49-23.43-24.42s-17.26-37-18.46-59.78C69.37 94.4 96 110.79 126 115.84A12 12 0 0 0 140 104V88a28 28 0 0 1 8.41-20.07A27.07 27.07 0 0 1 167.86 60a28.83 28.83 0 0 1 25.82 16.81a12 12 0 0 0 11 7.19H211Z"></path></svg>
+            twitter
+          </button>
+        </div>
+        </div>
+      </div>
+      <div class='right'>
+        
+          <div class='call'>
+          <div class='footer-logo'>
+            <img src='/pictures/logosmall.svg' alt='logo'/>
+            <p> Building Africa's workforce </p>
+          </div>
+          <p class='call-desc'>To achieve the future that we dream of, we must equip ourselves with the required skills to put us on the radar of employers all over the world</p>
+         
+         <div class='call-link'>
+           <a >
+            CONTACT US 
+          </a>
+           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bi text-2xl" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" data-icon="bi:arrow-up-right"><path fill="currentColor" fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"></path></svg>
+         </div>
+        </div>
+        <div class='quick-links'>
+           <div class='link-column'>
+            <h3>QUICK LINKS</h3>
+            <p>FAQ</p>
+            <p>Blog</p>
+           </div>
+            <div class='link-column'>
+            <h3>COMPANY</h3>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+           </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const burger = document.querySelector('.burger');
+      const navLinks = document.querySelector('.nav-links');
 
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        burger.classList.toggle('change');
+      });
+    </script>
+  </body>
 </html>
