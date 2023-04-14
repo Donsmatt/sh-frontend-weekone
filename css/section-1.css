@@ -13,6 +13,25 @@ body{
     display: flex;
     border-bottom: 1px solid #1a1f1a;
 }
+.menu{
+    display: none;
+}
+#ham-1{
+    color: #52a350;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    display: none;
+}
+#ham-2{
+    color: #52a350;
+    margin-right: 500px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    
+}
+
 .nav-menu {
     display: flex;
     padding-left: 70px;
@@ -60,7 +79,7 @@ ul li a:hover{
 }
 .container-x{
     margin-left: 80px;
-    margin-right: 75px;
+    margin-right: 80px;
     padding-top: 100px;
 }
 .container-1{
@@ -85,21 +104,27 @@ ul li a:hover{
 .container-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 .section-a{
-    padding-right: 30px;
+    padding-right: 40px;
+    margin-top: 80px;
 }
 .big{
-    font-size: 45px;
+    font-size: 40px;
     color: white;
 }
+
 .sps{
     color: #52a350;
+    font-size: 40px;
 }
 .partners{
     display: flex;
     margin-top: 5px;
+}
+.partner{
+    display: none;
 }
 .image{
     width: 70px;
@@ -115,8 +140,10 @@ ul li a:hover{
     margin-bottom: 8px;
 }
 .p1{
-    margin-top: opx;
+    margin-top: 20px;
     color: white;
+    font-size: 12px;
+    line-height: 1.5rem;
 }
 .btn-2{
     width: 110px;
@@ -128,11 +155,17 @@ ul li a:hover{
     font-size: 14px;
     margin-top: 7px;
 }
+.btn-2:hover{
+    color: #52a350;
+    background-color: white;
+}
 .p2{
     padding-left: 260px;
     color: white;
     font-size: 14px;
 }
+
+
 .section-c{
     float: right;
 }
@@ -149,4 +182,168 @@ ul li a:hover{
 }
 #disc{
     font-size: 25px;
+}
+@media screen and (max-width: 930px){
+    #ham-1{
+        display: block;
+    }
+    #ham-2{
+        cursor: pointer;
+        position: absolute;
+    
+    }
+    .line{
+        display: block;
+        padding: 0;
+    }
+    body{
+        max-width: 100%;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    
+.container-2{
+    display: block;
+    margin-top: 150px;
+
+}
+.section-a{
+    text-align: center;
+}
+.sps{
+    color: white;
+    font-size: 60px;
+}
+.big{
+    font-size: 60px;
+}
+.p1{
+    margin-top: 10px;
+}
+.btn-2{
+    float: right;
+    margin-top: 15px;
+}
+.container{
+    height: 850px;
+    padding-bottom: 200px;
+    background-size: contain;
+}
+.p2{
+    display: none;
+}
+.section-c{
+    text-align: center;
+    float: none;
+}
+.play{
+    margin-top: 17px;
+}
+.image{
+    width: 70px;
+}
+
+.partner{
+    display: flex;
+    margin-top: 60px;
+    align-content: center;
+    margin-left: 37%;
+}
+.partners{
+    display: none;
+}
+#raven{
+    padding-left: 10px;
+}
+#thire{
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+.pix{
+    max-width: 100%;
+}
+
+}
+@media screen and (max-width: 600px){
+    body{
+        max-width: 100%;
+    }
+    .container-x{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 100px;
+    }
+    .container-1{
+        text-align: left;
+    }
+    .spn-1{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .spn-2{
+        font-size: 12px;
+    }
+    
+    .container-2{
+        margin-top: 80px;
+    }    
+    .container{
+        width:100%;
+        height: 650px;
+        }
+        .section-a{
+            max-width: 100%;
+            padding-right: 0px;
+        }
+    .pix{
+        max-width: 100%;
+    }
+    .big{
+        font-size: 34px;
+    }
+    .sps{
+        font-size: 34px;
+    }
+    .logosvg{
+        margin-left: 10px;
+    }
+    .btn-2{
+        float: none;
+        width: 100%;
+    
+    }
+    .partner{
+        display: flex;
+        margin-top: 60px;
+        align-content: center;
+        margin-left: 29%;
+    }
+    
+}
+@media screen and (max-width: 430px){
+    .partner{
+        margin-left: 20%;
+    }
+    .container{
+        height: 650px;
+    }
+    .container-1{
+        margin-top: 5px;
+    }
+    .container-2{
+        margin-top: 70px;
+    }
+    .p1{
+        font-size: 14px;
+    }
+    .big{
+        font-size: 45px;
+    }
+    .sps{
+        font-size: 45px;
+    }
 }
