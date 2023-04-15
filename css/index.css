@@ -67,6 +67,7 @@ section {
   opacity: 0.5;
 }
 .middle_section2 {
+  width: 98.5vw;
   display: flex;
   justify-content: space-around;
 }
@@ -87,11 +88,14 @@ section {
 
 .middle_section2_sub1 {
   width: 50%;
-
-  /* padding-right: 100px; */
+  padding-right: 100px;
+}
+.middle_section2_sub1 img {
+  width: 100%;
 }
 
 .middle_section2_sub2 {
+  width: 50%;
   padding: 100px 50px;
   padding-left: 100px;
 }
@@ -125,6 +129,7 @@ section {
 }
 
 .dropdown {
+  width: 500px;
   position: relative;
   display: inline-block;
   margin-top: 30px;
@@ -132,26 +137,21 @@ section {
 }
 
 .dropdown-content {
-  display: none;
   position: relative;
-  background-color: white;
-  /* min-width: 100%; */
-  box-shadow: 0px 0px 4px gray;
+  min-width: 100%;
   z-index: 1;
-  margin-bottom: 20px;
 }
 
-.dropdown-content ul {
+.dropdown-content ol {
+  width: 100%;
   color: black;
-  padding: 20px;
-  display: block;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
-
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown-content ol li {
+  list-style: disc;
+  margin: 10px 0 10px 20px;
 }
-
 .icon {
   background-color: #f4f5f7;
   height: 50px;
@@ -272,7 +272,10 @@ section {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-
+.small {
+  width: 400px;
+  margin-bottom: 20px;
+}
 .product-card p {
   font-size: 1rem;
   margin-bottom: 20px;
@@ -458,17 +461,43 @@ footer button {
   footer {
     padding: 100px 10px 20px;
   }
+
+  .middle_section2_sub2 {
+    width: 50%;
+    padding: 0px;
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 968px) {
   .left,
   .right {
     flex-direction: column;
   }
+  .middle_section2 {
+    width: 98.5vw;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .middle_section2_sub2,
+  .middle_section2_sub1 {
+    width: 100%;
+    padding: 0px;
+    padding-left: 0;
+  }
   .socials {
     width: 80%;
   }
   .icon {
     margin: auto;
+  }
+  .dropdown {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   .product-card {
     width: calc(45% - 20px);
@@ -542,4 +571,55 @@ footer button {
   .buttons button {
     margin: 10px 0;
   }
+}
+
+.middle_section2_sub2 button[aria-expanded='false'] + div {
+  display: none;
+}
+
+/* END All the CSS needed to make disclosures work */
+
+.middle_section2_sub2 button[aria-expanded] {
+  border: 0.1em solid #ccc;
+  padding: 0.5em 1em 0.5em 0.5em;
+  font: inherit;
+  background-color: #eee;
+  border-radius: 0.2em;
+}
+
+.drop-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+button[aria-expanded]:hover,
+button[aria-expanded]:focus {
+  background-color: #eef7ee;
+  color: rgb(82 163 80);
+  outline: none;
+}
+
+button[aria-expanded]:hover span,
+button[aria-expanded]:focus span {
+  background-color: #fff;
+  outline: none;
+}
+
+button[aria-expanded]:hover svg,
+button[aria-expanded]:focus svg {
+  fill: #00f;
+}
+
+/* Lean on programmatic state for styling */
+button[aria-expanded='true'] svg {
+  transform: rotate(90deg);
+}
+
+.disclosee {
+  padding: 0.25em 0.75em;
+  border: 0.1em solid #ddd;
+  background-color: #fff;
+  margin-top: -0.1em;
 }

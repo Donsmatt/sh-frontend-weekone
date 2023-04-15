@@ -234,14 +234,14 @@
 
         </div>
       </div>
-      <!-- <div class="middle_section2">
+      <div class="middle_section2">
         <div class="middle_section2_sub1">
           <img src="pictures/dashboard-mockup2.0488f4b4.png" alt="Dashboard_ mockup" />
         </div>
         <div class="middle_section2_sub2">
-          <h4 class="h2_text">
+          <h2 class="h2_text small">
             <span class="green_text">Learn</span> in-demand skills seamlessly
-          </h4>
+          </h2>
           <p>
             Imagine learning in an environment built to give you the best
             learning experience. <br /><br />
@@ -250,10 +250,16 @@
             hands-on experience to ensure you are well-rounded in the track of
             your choice.
           </p>
-          <div class="dropdown">
-            <button class="dropbtn"><b>Perks </b></button>
-            <div class="dropdown-content">
-              <ul>
+          
+            <div class="dropdown">
+  <button class='drop-btn' type="button" id="btnDisc01" aria-expanded="false" onclick="toggleDisclosure(this.id);" aria-controls="Disclosed01">
+  Perks 
+<i class="fa-solid fa-angle-right transition-all ease-linear mr-4 md:mr-8"></i>
+</button>
+
+<div id="Disclosed01" class="disclosee">
+    <div class="dropdown-content">
+              <ol>
                 <li>
                   Earn a certificate of completion at the end of the
                   Internship
@@ -272,12 +278,13 @@
                   Boost your portfolio by taking part in capstone projects and
                   creating world class projects in the bootcamp
                 </li>
-              </ul>
+              </ol>
             </div>
-          </div>
+</div>
+</div>
           <button class="sign_up_btn">Sign up for FREE</button>
         </div>
-      </div> -->
+      </div>
     </div>
   </section> 
     <!-- corousel start -->
@@ -434,6 +441,31 @@
         navLinks.classList.toggle('show');
         burger.classList.toggle('change');
       });
+
+function toggleDisclosure(btnID) {
+  // Get the button and icon elements
+  var theButton = document.getElementById(btnID);
+  var theIcon = theButton.querySelector('i');
+  
+  // If the button is not expanded...
+  if (theButton.getAttribute("aria-expanded") == "false") {
+    // Set the button to expanded
+    theButton.setAttribute("aria-expanded", "true");
+    // Animate the icon to "fa-angle-down"
+    theIcon.classList.remove("fa-angle-right");
+    theIcon.classList.add("fa-angle-down");
+    
+  // Otherwise, the button is expanded...
+  } else {
+    // Set the button to collapsed
+    theButton.setAttribute("aria-expanded", "false");
+    // Animate the icon to "fa-angle-right"
+    theIcon.classList.remove("fa-angle-down");
+    theIcon.classList.add("fa-angle-right");
+  }
+}
+
+
     </script>
   </body>
 </html>
