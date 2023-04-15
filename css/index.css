@@ -424,7 +424,7 @@ footer button {
   display: flex;
   justify-content: space-between;
   margin: 30px 0 60px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .socials {
   width: 35%;
@@ -448,6 +448,58 @@ footer button {
 .link-column {
   margin-right: 80px;
 }
+
+.middle_section2_sub2 button[aria-expanded='false'] + div {
+  display: none;
+}
+
+/* END All the CSS needed to make disclosures work */
+
+.middle_section2_sub2 button[aria-expanded] {
+  border: 0.1em solid #ccc;
+  padding: 0.5em 1em 0.5em 0.5em;
+  font: inherit;
+  background-color: #eee;
+  border-radius: 0.2em;
+}
+
+.drop-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+button[aria-expanded]:hover,
+button[aria-expanded]:focus {
+  background-color: #eef7ee;
+  color: rgb(82 163 80);
+  outline: none;
+}
+
+button[aria-expanded]:hover span,
+button[aria-expanded]:focus span {
+  background-color: #fff;
+  outline: none;
+}
+
+button[aria-expanded]:hover svg,
+button[aria-expanded]:focus svg {
+  fill: #00f;
+}
+
+/* Lean on programmatic state for styling */
+button[aria-expanded='true'] svg {
+  transform: rotate(90deg);
+}
+
+.disclosee {
+  padding: 0.25em 0.75em;
+  border: 0.1em solid #ddd;
+  background-color: #fff;
+  margin-top: -0.1em;
+}
+
 @media screen and (max-width: 1280px) {
   .product-grid {
     display: flex;
@@ -531,6 +583,20 @@ footer button {
   .form h1 {
     margin-left: 0px;
   }
+  footer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(82, 163, 80, 1);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+  }
+
+  .buttons {
+    width: 90vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -565,61 +631,8 @@ footer button {
   .form h1 {
     margin-bottom: 30px;
   }
-  .buttons {
-    flex-direction: column;
-  }
+
   .buttons button {
     margin: 10px 0;
   }
-}
-
-.middle_section2_sub2 button[aria-expanded='false'] + div {
-  display: none;
-}
-
-/* END All the CSS needed to make disclosures work */
-
-.middle_section2_sub2 button[aria-expanded] {
-  border: 0.1em solid #ccc;
-  padding: 0.5em 1em 0.5em 0.5em;
-  font: inherit;
-  background-color: #eee;
-  border-radius: 0.2em;
-}
-
-.drop-btn {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-button[aria-expanded]:hover,
-button[aria-expanded]:focus {
-  background-color: #eef7ee;
-  color: rgb(82 163 80);
-  outline: none;
-}
-
-button[aria-expanded]:hover span,
-button[aria-expanded]:focus span {
-  background-color: #fff;
-  outline: none;
-}
-
-button[aria-expanded]:hover svg,
-button[aria-expanded]:focus svg {
-  fill: #00f;
-}
-
-/* Lean on programmatic state for styling */
-button[aria-expanded='true'] svg {
-  transform: rotate(90deg);
-}
-
-.disclosee {
-  padding: 0.25em 0.75em;
-  border: 0.1em solid #ddd;
-  background-color: #fff;
-  margin-top: -0.1em;
 }
