@@ -434,7 +434,7 @@ footer button{
 }
 .quick-links{
   display:flex;
-  width:450px;
+  max-width:450px;
 }
 .quick-links h3{
   color:white;
