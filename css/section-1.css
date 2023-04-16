@@ -254,7 +254,7 @@ ul li a:hover {
     display: block;
   }
   .change .line:nth-child(1) {
-    transform: rotate(-45deg) translate(-3px, 4.5px);
+    transform: rotate(-45deg) translate(-4px, 4.5px);
   }
 
   .change .line:nth-child(2) {
@@ -262,7 +262,7 @@ ul li a:hover {
   }
 
   .change .line:nth-child(3) {
-    transform: rotate(45deg) translate(-3px, -4.5px);
+    transform: rotate(45deg) translate(-2.5px, -3px);
   }
   .line {
     display: block;
